@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. <br> Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your Concern</h3>
+                <form id="contactForm" action="../PHP/submit.php" method="POST">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder=" Juan Cruz" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" name="phone" placeholder=" +639123456789" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder=" juancruz@gmail.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder=" Feedback" required>
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="window.history.back()">Go Back</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>naturefeels@group7.com</td>
+                    </tr>
+                    <tr>
+                        <td>Tel</td>
+                        <td>1125-1120-0901</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Muntinlupa, Philippines</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>

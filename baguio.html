@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/vacation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>Book Your Perfect Stay</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hotel Booking</h1>
+        <div class="nav-container">
+            <div class="nav-buttons">
+                <div class="nav-button"><a href="../HTML/index.html">Home</a></div>
+                <div class="nav-button"><a href="#about">About</a></div>
+                <div class="nav-button"><a href="#contact">Contact</a></div>
+                <div class="nav-button dropdown">
+                    <a href="#" class="dropdown-toggle">Hotels</a>
+                    <div class="dropdown-content">
+                        <a href="../HTML/allhotel.html">All Hotels</a>
+                        <a href="../HTML/Tagaytay.html">Tagaytay</a>
+                        <a href="../HTML/Manila.html">Manila</a>
+                        <a href="#hotel3">Palawan</a>
+                        <a href="#hotel4">La union</a>
+                        <a href="#hotel4">Boracay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <h1>Baguio</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search hotels...">
+            <button id="searchButton" class="search-button" onclick="searchHotels()">Search</button>
+        </div>  
+        <section class="hotel-container">
+            <div class="hotel-card">
+                <div class="card">
+                    <img src="../BAGUIO/Baguio1.jpg" alt="Holiday Inn Baguio City Centre, an IHG Hotel" class="hotel-image" data-hover="Baguio/Baguio1.jpg" />
+                    <h3>Holiday Inn Baguio City Centre, an IHG Hotel</h3>
+                    <p>₱4,500/night</p>
+                    <button class="select-button">Select</button>
+                    <button class="inquire-button" disabled>Inquire</button>
+                    <button class="toggle-notes">View Notes</button>
+                    <div class="notes hidden">
+                        <p><strong>Additional Costs:</strong></p>
+                        <ul>
+                            <li>Add Person: ₱1,000</li>
+                            <li>Add Bed: ₱1,500</li>
+                        </ul>
+                        <p><strong>Amenities:</strong></p>
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li>Toothbrush</li>
+                            <li>Soap</li>
+                            <li>Towels</li>
+                            <li>Free Coffee</li>
+                            <li>Free Wifi</li>
+                            <li>Free Use of Appliances</li>
+                        </ul>
+                    </div>
+                    <button class="room-button" data-room="Holiday Inn Baguio City Centre, an IHG Hotel">Select Rooms</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="card">
+                    <img src="../Baguio/Baguio2.jpg" alt="Uphill Baguio" class="hotel-image" />
+                    <img src="Tagaytay/Anya Resort Tagaytay 1.jpg" alt="Uphill Baguio" class="hover-image" />
+                    <h3>Uphill Baguio</h3>
+                    <p>₱3,200/night</p>
+                    <button class="select-button">Select</button>
+                    <button class="inquire-button" disabled>Inquire</button>
+                    <button class="toggle-notes">View Notes</button>
+                    <div class="notes hidden">
+                        <p><strong>Additional Costs:</strong></p>
+                        <ul>
+                            <li>Add Person: ₱1,000</li>
+                            <li>Add Bed: ₱1,500</li>
+                        </ul>
+                        <p><strong>Amenities:</strong></p>
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li>Toothbrush</li>
+                            <li>Soap</li>
+                            <li>Towels</li>
+                            <li>Free Coffee</li>
+                            <li>Free Wifi</li>
+                            <li>Free Use of Appliances</li>
+                        </ul>
+                    </div>
+                    <button class="room-button" data-room="Uphill Baguio">Select Rooms</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="card">
+                    <img src="../Baguio/Baguio3.jpg" alt="Azalea Hotels & Residences Baguio" class="hotel-image" />
+                    <img src="Tagaytay/Anya Resort Tagaytay 1.jpg" alt="Anya Resort Tagaytay1" class="hover-image" />
+                    <h3>Azalea Hotels & Residences Baguio</h3>
+                    <p>₱5,000/night</p>
+                    <button class="select-button">Select</button>
+                    <button class="inquire-button" disabled>Inquire</button>
+                    <button class="toggle-notes">View Notes</button>
+                    <div class="notes hidden">
+                        <p><strong>Additional Costs:</strong></p>
+                        <ul>
+                            <li>Add Person: ₱1,000</li>
+                            <li>Add Bed: ₱1,500</li>
+                        </ul>
+                        <p><strong>Amenities:</strong></p>
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li>Toothbrush</li>
+                            <li>Soap</li>
+                            <li>Towels</li>
+                            <li>Free Coffee</li>
+                            <li>Free Wifi</li>
+                            <li>Free Use of Appliances</li>
+                        </ul>
+                    </div>
+                    <button class="room-button" data-room="Azalea Hotels & Residences Baguio">Select Rooms</button>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="card">
+                    <img src="../Baguio/Baguio4.jpg" alt="The Podium Boutique Hotel" class="hotel-image" />
+                    <img src="Tagaytay/Anya Resort Tagaytay 1.jpg" alt="The Podium Boutique Hotel" class="hover-image" />
+                    <h3>The Podium Boutique Hotel</h3>
+                    <p>₱6,000/night</p>
+                    <button class="select-button">Select</button>
+                    <button class="inquire-button" disabled>Inquire</button>
+                    <button class="toggle-notes">View Notes</button>
+                    <div class="notes hidden">
+                        <p><strong>Additional Costs:</strong></p>
+                        <ul>
+                            <li>Add Person: ₱1,000</li>
+                            <li>Add Bed: ₱1,500</li>
+                        </ul>
+                        <p><strong>Amenities:</strong></p>
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li>Toothbrush</li>
+                            <li>Soap</li>
+                            <li>Towels</li>
+                            <li>Free Coffee</li>
+                            <li>Free Wifi</li>
+                            <li>Free Use of Appliances</li>
+                        </ul>
+                    </div>
+                    <button class="room-button" data-room="The Podium Boutique Hotel">Select Rooms</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal hidden" id="room-selection-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Select Rooms</h2>
+                <form action="process_rooms.php" method="POST" id="room-selection-form">
+                    <div class="room-selection-container">
+                        <button type="button" class="room-button" data-room="Room 1">Room 1</button>
+                        <button type="button" class="room-button" data-room="Room 2">Room 2</button>
+                        <button type="button" class="room-button" data-room="Room 3">Room 3</button>
+                        <button type="button" class="room-button" data-room="Room 4">Room 4</button>
+                    </div>
+                    <table id="selected-rooms-table">
+                        <thead>
+                            <tr>
+                                <th>Selected Rooms</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <input type="hidden" name="selected_rooms" id="selected_rooms" value="">
+                    <button type="submit" class="confirm-rooms-button">Confirm Selection</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal hidden" id="inquiry-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Plan Your Stay</h2>
+                <form action="process.php" method="POST" id="inquiry-form">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="input-text" placeholder="Enter your name" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="input-text" placeholder="Enter your email" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in">Check-in Date</label>
+                        <input type="date" id="check-in" name="check_in" class="input-text" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="check-out">Check-out Date</label>
+                        <input type="date" id="check-out" name="check_out" class="input-text" required />
+                    </div>
+                    <div class="input-group number-selector-adults">
+                        <label for="adults">Adults</label>
+                        <input type="number" id="adults" name="adults" class="input-text" value="1" min="1" required />
+                    </div>
+                    <div class="input-group number-selector-children">
+                        <label for="children">Children</label>
+                        <input type="number" id="children" name="children" class="input-text" value="0" min="0" />
+                    </div>
+                    <input type="hidden" name="selected_rooms" id="selected_rooms_input" value="">
+                    <input type="hidden" name="selected_hotel" id="selected_hotel" value="">
+                    <button type="submit" class="search-button">Inquire</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JAVASCRIPT/vacation.js"></script>
+</body>
+</html>
